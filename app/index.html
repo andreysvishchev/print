@@ -5,6 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ПринтЛюкс</title>
+  <link rel="stylesheet" href="css/graph-modal.min.css">
+  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -15,7 +18,6 @@
     <span class="line"></span>
     <span class="line"></span>
     <span class="line"></span>
-
     <div class="hero">
       <div class="hero__top">
         <div class="hero__baner">
@@ -41,12 +43,12 @@
         </nav>
       </div>
       <div class="hero__title-inner">
-        <div class="hero__title">
+        <div class="hero__title" data-aos="zoom-out-up" data-aos-duration="1200">
           <span class="hero__stroke hero__stroke--big">производство</span>
           <span class="hero__stroke hero__stroke--big">Изготовление</span>
           <span class="hero__stroke hero__stroke--big">печать</span>
         </div>
-        <div class="hero__subtitle">
+        <div class="hero__subtitle" data-aos="zoom-out-up" data-aos-duration="1200">
           <span class="hero__stroke hero__stroke--small">каталогов</span>
           <span class="hero__stroke hero__stroke--small">листовок</span>
           <span class="hero__stroke hero__stroke--small">брошюр</span>
@@ -69,7 +71,7 @@
 
     <div class="about">
       <div class="about__inner">
-        <div class="about__item">
+        <div class="about__item" data-aos="fade-right" data-aos-duration="1000">
           <div class="about__text-box">
             <p class="about__text text-1">
               15 лет <br> на рынке
@@ -79,7 +81,7 @@
             </p>
           </div>
         </div>
-        <div class="about__item">
+        <div class="about__item" data-aos="fade-left" data-aos-duration="1000">
           <div class="about__text-box">
             <p class="about__text text-2">
               запуск в печать за 30 минут
@@ -88,11 +90,12 @@
               </span>
             </p>
           </div>
-          <img class="about__img-top" src="images/about.png" alt="">
+          <img class="about__img-top" src="images/about.png" alt="картинка" data-aos="fade-left"
+            data-aos-duration="1400">
         </div>
       </div>
       <div class="about__inner">
-        <div class="about__item">
+        <div class="about__item" data-aos="fade-right" data-aos-duration="1000">
           <div class="about__text-box">
             <p class="about__text text-3">
               Развезем тираж по точкам
@@ -101,9 +104,10 @@
               </span>
             </p>
           </div>
-          <img class="about__img-bot" src="images/about-2.png" alt="">
+          <img class="about__img-bot" src="images/about-2.png" alt="картинка" data-aos="fade-right"
+            data-aos-duration="1400">
         </div>
-        <div class="about__item">
+        <div class="about__item" data-aos="fade-left" data-aos-duration="1000">
           <div class="about__text-box">
             <p class="about__text text-4">
               расчет по факту доставки тиража
@@ -116,9 +120,8 @@
       </div>
     </div>
     <div class="product">
-
       <div class="product__inner">
-        <img class="product__img" src="images/product.png" alt="">
+        <img class="product__img" src="images/product.png" alt="картинка" data-aos="fade-up" data-aos-duration="1000">
         <div class="product__item">
           <h4 class="product__title">
             <span>01</span>
@@ -192,9 +195,103 @@
           </div>
         </div>
       </div>
+      <img src="images/about-3.png" alt="картинка" class="product__bot-img" data-aos="fade-up" data-aos-duration="1000">
+    </div>
+    <div class="swiper-container slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide slider__item">
+          <div class="slider__image-box slider__image-box--one">
+            <img class="slider__img" src="images/1.png" alt="логотип">
+            <img class="slider__img" src="images/2.png" alt="логотип">
+            <img class="slider__img" src="images/3.png" alt="логотип">
+            <img class="slider__img" src="images/4.png" alt="логотип">
+          </div>
+          <div class="slider__text-box slider__text-box--one">
+            <p class="slider__text">
+              Наша репутация- гарантия качества
+            </p>
+          </div>
+        </div>
+        <div class="swiper-slide slider__item">
+          <div class="slider__text-box slider__text-box--two">
+            <p class="slider__text">
+              Наша репутация- гарантия качества
+            </p>
+          </div>
+          <div class="slider__image-box slider__image-box--two">
+            <img class="slider__img" src="images/5.png" alt="логотип">
+            <img class="slider__img" src="images/6.png" alt="логотип">
+            <img class="slider__img" src="images/7.png" alt="логотип">
+            <img class="slider__img" src="images/8.png" alt="логотип">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="address">
+      <div class="address__info">
+        <div class="address__info-box">
+          <h2 class="address__title">Контакты</h2>
+          <a class="address__link" href="tel:+74993460904">+ 7 ( 499 ) 346 - 09 - 04</a>
+          <a class="address__link" href="mailto:nfo@printluxe.ru">info@printluxe.ru</a>
+          <sapn class="address__link">шоссе Энтузиастов,
+            д. 31, стр. 17</sapn>
+          <a class="address__btn-link" href="#" data-graph-path="conect">связаться с нами</a>
+        </div>
+        <div class="modal">
+          <div class="modal__container conect" role="dialog" aria-modal="true" data-graph-target="conect">
+            <button class="btn-reset modal__close conect__close conect-close-1" aria-label="Закрыть модальное окно"></button>
+            <button class="btn-reset modal__close conect__close conect-close-2" aria-label="Закрыть модальное окно"></button>
+            <button class="btn-reset modal__close conect__close conect-close-3" aria-label="Закрыть модальное окно"></button>
+            <button class="btn-reset modal__close conect__close conect-close-4" aria-label="Закрыть модальное окно"></button>
+            <div class="modal-content conect__inner">
+              <h4 class="conect__title">связаться с нами</h4>
+              <form action="#" class="conect__form">
+                <input type="tel" class="conect__input telmask" placeholder="Телефон" required>
+                <input type="email" class="conect__input" placeholder="Электронная почта" required>
+                <button type="submit" class="conect__btn">связаться со мной</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="address__social">
+          <a class="address__social-link" href="#">
+            <img src="images/inst.svg" alt="картинка">
+          </a>
+          <a class="address__social-link" href="#">
+            <img src="images/facebook.svg" alt="картинка">
+          </a>
+          <a class="address__social-link" href="#">
+            <img src="images/vk.svg" alt="картинка">
+          </a>
+        </div>
+      </div>
+      <div class="address__map">
+        <img src="images/map.jpg" alt="картинка">
+      </div>
+    </div>
+    <div class="makets">
+      <img class="makets__img" src="images/maket.png" alt="картинка" data-aos="fade-up" data-aos-duration="1000">
+      <p class="makets__text" data-aos="zoom-in" data-aos-duration="1200">
+        <span> сделаем</span>
+        <span> макет</span>
+        <span> и</span>
+        <span> верстку</span>
+        <span> к</span>
+        <span> любому</span>
+        <span> тиражу</span>
+      </p>
+      <div class="makets__info">
+        <h2 class="makets__title" data-aos="zoom-in" data-aos-duration="1000">Требования к макетам</h2>
+        <div class="makets__link-box">
+          <a class="makets__link" href="#" download="#">скачать word</a>
+          <a class="makets__link" href="#" download="#">скачать pdf</a>
+        </div>
+      </div>
     </div>
   </div>
-
+  <script src="js/graph-modal.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>
 
